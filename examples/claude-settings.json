@@ -1,0 +1,16 @@
+{
+  "_comment": "Claude Code 의 ~/.claude/settings.json 에 hooks 항목을 아래와 같이 추가하면, 작업 완료 시 tmux 윈도우 인덱스가 노란색으로 강조되고 8자 한국어 요약이 함께 표시됩니다.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude-stop-tmux.sh",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
